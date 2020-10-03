@@ -129,7 +129,7 @@ if [[ $OSTYPE == darwin* ]]; then
   alias upgrade_brew_cask='$DOTFILES/install_brew_cask.sh'
 fi
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # # miniconda3
 # # export PATH="/Users/robinzzs/miniconda3/bin:$PATH"

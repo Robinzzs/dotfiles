@@ -122,6 +122,21 @@ if [[ $OSTYPE == darwin* ]]; then
   }
 fi
 
+# emacs
+emacsopenfile() {
+  emacs $@ &
+  return 0
+}
+alias ez="emacsopenfile ~/.zshrc"
+alias eb="emacsopenfile ~/.bash_profile"
+alias ezh="emacsopenfile ~/.zsh_history"
+alias ebh="emacsopenfile ~/.bash_history"
+alias sz="source ~/.zshrc"
+alias sb="source ~/.bash_profile"
+alias es="emacsopenfile SConstruct"
+alias em="emacsopenfile"
+# alias ei="emacsopenfile ~/.spacemacs.d/init.el"
+
 # # Golang
 # if command -v go >/dev/null 2>&1; then
 #     function gocomplete() {
