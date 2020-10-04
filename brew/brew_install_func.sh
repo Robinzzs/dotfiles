@@ -21,7 +21,7 @@ else
   NORMAL=""
 fi
 
-function brew_check() {
+function _brew_check() {
   # Check OS
   if [[ $OSTYPE != darwin* ]]; then
     echo "${RED}Error: only install software via brew_cask on macOS.${NORMAL}" >&2
@@ -52,21 +52,23 @@ function brew_check() {
   fi
 }
 
-function brew_install_pkg() {
-  for pkg in $@; do
-    printf "${GREEN} ➜  Installing ${pkg}...${NORMAL}\n"
-    # brew install ${pkg}
+function _brew_install_pkg() {
+  pkgs=$1
+  for pkg in ${pkgs[*]}; do
+    printf "${GREEN} ➜  Installing %s...${NORMAL}\n" "${pkg}"
+    brew install "${pkg}"
   done
 }
 
-function brew_install_app() {
-  for app in ${apps[@]}; do
-    printf "${GREEN} ➜  Installing ${app}...${NORMAL}\n"
-    brew cask install ${app}
+function _brew_install_app() {
+  apps=$1
+  for app in ${apps[*]}; do
+    printf "${GREEN} ➜  Installing %s...${NORMAL}\n" "${app}"
+    brew cask install "${app}"
   done
 }
 
-function brew_cleanup() {
+function _brew_cleanup() {
   printf "${GREEN} ➜  Cleanup cache files...${NORMAL}\n"
   brew cleanup
 }
