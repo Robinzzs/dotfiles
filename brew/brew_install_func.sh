@@ -52,11 +52,13 @@ function _brew_check() {
   fi
 }
 
+# failed_pkgs=""
 function _brew_install_pkg() {
   pkgs=$1
   for pkg in ${pkgs[*]}; do
     printf "${GREEN} ➜  Installing %s...${NORMAL}\n" "${pkg}"
     brew install "${pkg}"
+    # [ $? -ne 0 ] && $failed_pkgs="$failed_pkgs $1" # package failed to install.
   done
 }
 
