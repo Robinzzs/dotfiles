@@ -29,20 +29,20 @@ export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/imagemagick@6/lib"
 export CPPFLAGS="-I/usr/local/opt/imagemagick@6/include"
 
-#LLVM OpenMP
-export PATH="/usr/local/opt/llvm/bin:$PATH"
-# export C_INCLUDE_PATH=/usr/local/opt/llvm/include:/usr/local/opt/libomp/include:$C_INCLUDE_PATH
-# export CPLUS_INCLUDE_PATH=/usr/local/opt/llvm/include:/usr/local/opt/libomp/include:$CPLUS_INCLUDE_PAT
-# export LIBRARY_PATH=/usr/local/opt/llvm/include:/usr/local/opt/libomp/include:$LIBRARY_PATH
-# export LD_LIBRARY_PATH=/usr/local/opt/llvm/include:/usr/local/opt/libomp/includex:$LD_LIBRARY_PATH
-# LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
-# export LDFLAGS="-L/usr/local/opt/llvm/lib"
-export LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
-export CPPFLAGS="-I/usr/local/opt/llvm/include"
-# export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/opt/llvm/lib/
-export LIBRARY_PATH="/usr/local/lib"
-export LDFLAGS="-L/usr/local/opt/libomp/lib"
-export CPPFLAGS="-I/usr/local/opt/libomp/include"
+# #LLVM OpenMP
+# export PATH="/usr/local/opt/llvm/bin:$PATH"
+# # export C_INCLUDE_PATH=/usr/local/opt/llvm/include:/usr/local/opt/libomp/include:$C_INCLUDE_PATH
+# # export CPLUS_INCLUDE_PATH=/usr/local/opt/llvm/include:/usr/local/opt/libomp/include:$CPLUS_INCLUDE_PAT
+# # export LIBRARY_PATH=/usr/local/opt/llvm/include:/usr/local/opt/libomp/include:$LIBRARY_PATH
+# # export LD_LIBRARY_PATH=/usr/local/opt/llvm/include:/usr/local/opt/libomp/includex:$LD_LIBRARY_PATH
+# # LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+# # export LDFLAGS="-L/usr/local/opt/llvm/lib"
+# export LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+# export CPPFLAGS="-I/usr/local/opt/llvm/include"
+# # export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/opt/llvm/lib/
+# export LIBRARY_PATH="/usr/local/lib"
+# export LDFLAGS="-L/usr/local/opt/libomp/lib"
+# export CPPFLAGS="-I/usr/local/opt/libomp/include"
 
 # open-mpi
 export PATH="/usr/local/opt/open-mpi/bin:$PATH"

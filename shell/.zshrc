@@ -26,6 +26,8 @@ antigen bundle gitfast
 antigen bundle sudo
 antigen bundle z
 
+# antigen bundle svn
+
 # Misc bundles.
 command -v python >/dev/null 2>&1 && antigen bundle djui/alias-tips
 command -v fdfind >/dev/null 2>&1 && alias fd='fdfind'
