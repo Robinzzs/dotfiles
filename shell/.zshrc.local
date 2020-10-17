@@ -154,7 +154,7 @@ alias em="emacsopenfile"
 
 # svn
 alias svna="svn add"
-alias svncimsg="svn commit -m"
+alias svncmsg="svn commit -m"
 alias svndf="svn diff"
 alias svnup="svn update"
 alias svnlg="svn log"
