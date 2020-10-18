@@ -5,8 +5,8 @@ if command -v neofetch >/dev/null 2>&1; then
   neofetch
 fi
 
+## re-declare the PATH
 # miniconda3
-# export PATH="/Users/robinzzs/miniconda3/bin:$PATH"
 export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
 
 #LLVM OpenMP

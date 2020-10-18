@@ -132,7 +132,3 @@ if [[ $OSTYPE == darwin* ]]; then
 fi
 
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-# # miniconda3
-# # export PATH="/Users/robinzzs/miniconda3/bin:$PATH"
-# export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
